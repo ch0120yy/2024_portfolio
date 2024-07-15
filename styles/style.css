@@ -1,10 +1,11 @@
 body, html {scroll-behavior:smooth;}
 /* 공통 */
 .profile, .project > div {
+    width:1920px;
     max-width:1610px; margin:0 auto;
     border:2px solid aqua;
 }
-.project > div {margin-bottom:150px;}
+.project > div {margin:0 auto 150px;}
 h1 {
     font-family: "Russo One", sans-serif;
     font-size:5rem; font-weight:400;
@@ -99,23 +100,42 @@ nav a {
     padding:50px 0;
     background:linear-gradient(180deg, #666FF2, #8B63E2);
 }
-.project > div {margin-bottom:300px;}
 /* 3-1. 웹 디자인 */
-.project .web {position:relative;}
-.project .web .swiper {
-    max-width:1258px; background-color:#FFF;
-    padding:100px 90px;
-}
-.project .web .swiper-slide {display:flex; justify-content:center;}
+.project .web {position:relative; background-color:#FFF; max-width:1258px; padding:100px 90px; border-radius:30px;}
+.project .web .swiper {}
+.project .web .swiper-slide {display:flex; justify-content:center; align-items:center;}
 .project .web .swiper-slide .thum {width:653px;}
 .project .web .swiper-slide .thum img {width:100%;}
-.project .web .swiper-slide .web_info {background-color:lime;}
+.project .web .swiper-slide .web_info {width:395px; margin-left:30px;}
+.project .web .swiper-slide .web_info h3 {font-weight:500; color: #222; font-size:1.438rem; margin-bottom:16px;}
+.project .web .swiper-slide .web_info ul li {margin-top:14px;}
+.project .web .swiper-slide .web_info ul li p:first-of-type {font-weight:500; color:#222;}
+.project .web .swiper-slide .web_info ul li p:last-of-type {color:#333; font-size:0.938rem; letter-spacing:-.2px;}
+.project .web .swiper-slide .web_info .link {margin-top:45px;}
+.project .web .swiper-slide .web_info .link a {
+    padding:10px 20px; background-color:rgba(34, 34, 34, 0.8); color:#F9F9F9;
+    margin-right:10px; border-radius:5px;
+}
 .project .web div[class^=swiper-button] {color:#636363; scale:.7;}
 /* 3-2. 앱 디자인 */
-.project .app {display:flex;}
-.project .app .thum {}
+.project .app {
+    background-color:#FFF; display:flex; max-width:1920px;
+    justify-content:center; align-items: center; padding:100px 0;
+}
+.project .app .thum {width:653px;}
 .project .app .thum img {width:100%;}
-.project .app .app_info {}
+.project .app .app_info {width:574px; margin-left:50px;}
+.project .app .app_info > p {color: #333;}
+.project .app .app_info h3 {font-weight:500; color: #222; font-size:1.438rem;}
+.project .app .app_info ul {}
+.project .app .app_info ul li {margin-top:14px; color:#222; font-weight:500;}
+.project .app .app_info ul li p:first-of-type {font-weight:500; color:#222;}
+.project .app .app_info ul li p:last-of-type {color:#333; letter-spacing:-.2px; font-size:0.938rem;}
+.project .app .app_info .link {margin-top:45px;}
+.project .app .app_info .link a {
+    padding:10px 20px; background-color:rgba(34, 34, 34, 0.8); color:#F9F9F9;
+    margin-right:10px; border-radius:5px;
+}
 /* 3-3. sns 디자인 */
 .project .sns {max-width:1920px; padding:0 20px;}
 .project .sns .swiper-wrapper {transition-timing-function:linear;} /* 일정속도 */

@@ -29,7 +29,7 @@ const snsS = new Swiper('.sns .swiper',{
 const detailS = new Swiper('.detail .swiper',{
     slidesPerView:2, // 한 번에 보일 슬라이드 개수 (모바일)
     spaceBetween:20,
-    autoplay:{delay:2000},
+    // autoplay:{delay:2000},
     loop:true,
     // 반응형 슬라이드 수
     breakpoints:{
