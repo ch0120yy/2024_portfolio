@@ -3,4 +3,4 @@
 ### 0714 작업
 
 #netlify site
-## 추후기입
+* https://web-portfolio-2024yw.netlify.app/
