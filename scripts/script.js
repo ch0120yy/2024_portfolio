@@ -37,6 +37,30 @@ const detailS = new Swiper('.detail .swiper',{
         1200:{slidesPerView:4}, // 1200 이상일 때 4개
     },
 })
+
+//card popup
+const big_card = document.querySelector('.big_card')
+const view_card = document.querySelectorAll('.cardnews img')
+const big_img_card = document.querySelector('.big_card img')
+console.log(view_card, big_card, big_img_card)
+big_card.style.display = 'none' // 팝업 초기 숨기기
+
+for(let cardnews of view_card){
+    cardnews.addEventListener('click',(e)=>{
+        e.preventDefault()
+        big_card.style.display = 'block'
+        document.body.style.overflow = 'hidden';
+        big_img_card.src = cardnews.src
+        big_card.children[0].scrollTo(0,0)
+    })
+}
+
+// 팝업 출력 시 팝업 닫기
+big_card.addEventListener('click',()=>{
+    big_card.style.display = 'none'
+    document.body.style.overflow = '';
+})
+
 // detail popup
 // 1. 팝업 숨기기(big_bg)
 // 2. swiper img 클릭 시
