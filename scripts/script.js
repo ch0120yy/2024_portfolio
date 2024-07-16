@@ -27,20 +27,20 @@ const snsS = new Swiper('.sns .swiper',{
 
 // detail swiper
 const detailS = new Swiper('.detail .swiper',{
-    slidesPerView:2, // 한 번에 보일 슬라이드 개수 (모바일)
+    slidesPerView:4, // 한 번에 보일 슬라이드 개수 (모바일)
     spaceBetween:20,
     // autoplay:{delay:2000},
     loop:true,
     // 반응형 슬라이드 수
-    breakpoints:{
+    /* breakpoints:{
         800:{slidesPerView:3}, // 800 이상일 때 3개
         1200:{slidesPerView:4}, // 1200 이상일 때 4개
-    },
+    }, */
 })
 
 //card popup
 const big_card = document.querySelector('.big_card')
-const view_card = document.querySelectorAll('.cardnews img')
+const view_card = document.querySelectorAll('.cardnews .card_g img')
 const big_img_card = document.querySelector('.big_card img')
 console.log(view_card, big_card, big_img_card)
 big_card.style.display = 'none' // 팝업 초기 숨기기
