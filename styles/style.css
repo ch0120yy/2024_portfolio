@@ -115,7 +115,7 @@ nav a {
     padding:10px 20px; background-color:rgba(34, 34, 34, 0.8); color:#F9F9F9;
     margin-right:10px; border-radius:5px;
 }
-.project .web div[class^=swiper-button] {color:#636363; scale:.7;}
+.project .web div[class^=swiper-button] {color:#636363; transform:scale(0.7);}
 /* 3-2. 앱 디자인 */
 .project .app {
     background-color:#FFF; display:flex; max-width:1920px;
@@ -179,10 +179,10 @@ nav a {
 
 /* 3-6. 상세페이지 */
 .project .detail {}
-.project .detail .swiper {height:500px;} /* overflow:hidden 내장 */
+.project .detail .swiper {height:600px;} /* overflow:hidden 내장 */
 .project .detail .swiper .swiper-slide a {
     position: relative;
-    display:block; height:500px;
+    display:block; height:600px;
 }
 .project .detail .swiper .swiper-slide a::after {
     content:''; display:block;
