@@ -3,7 +3,7 @@ body, html {scroll-behavior:smooth;}
 .profile, .project > div {
     max-width:1610px; margin:0 auto;
 }
-.project > div {margin:0 auto 150px;}
+.project > div {margin:0 auto 300px;}
 h1 {
     font-family: "Russo One", sans-serif;
     font-size:5rem; font-weight:400;
@@ -147,7 +147,7 @@ nav a {
 .project .cardnews .card_g a {width:100%; margin-right:10px; height:398px; position: relative;}
 .project .cardnews .card_g a::after {
     content:''; display:block;
-    height:100px; width:100%; background:linear-gradient(360deg, #8B63E2, transparent);
+    height:100px; width:100%; background:linear-gradient(360deg, #7E67E7, transparent);
     position:absolute; left:0; bottom:0; z-index:999;
 }
 .project .cardnews .card_g a:last-of-type {margin-right:0;}
@@ -186,10 +186,42 @@ nav a {
 }
 .project .detail .swiper .swiper-slide a::after {
     content:''; display:block;
-    height:100px; width:100%; background:linear-gradient(360deg, #8B63E2, transparent);
+    height:100px; width:100%; background:linear-gradient(360deg, #8565E4, transparent);
     position:absolute; left:0; bottom:0; z-index:999;
 }
 .project .detail .swiper .swiper-slide img {width:100%;}
+
+/* contact */
+.project .contact {
+    display:flex; flex-flow:row wrap;
+    justify-content:center; align-items:center;
+}
+.project .contact h1 {font-size:4.375rem; margin:0 50px 0 0;}
+.project p {display:flex; align-items: center;}
+.project p img {width:45px;}
+.project p a {margin-left:5px; font-size:1.875rem; font-weight:500;}
+
+/* 아웃트로 */
+.project .outro {
+    /* width:calc(100% - 210px); */
+    text-align: center;
+    display:grid;
+    width:769px;
+    grid-template-areas:
+    'a c'
+    'b c';
+}
+.project .outro p:nth-child(1) {
+    grid-area:a; font-size:3.125rem; font-family:"Russo One", sans-serif;
+}
+.project .outro p:nth-child(2) {
+    grid-area:b; font-size:1.5rem; display:block;
+}
+.project .outro p:nth-child(3) {
+    grid-area:c; margin-left:50px; width:107px;
+}
+.project .outro p:nth-child(3) img {width:100%;}
+
 /* 상세 팝업 */
 .big_bg {
     position:fixed; left:0; top:0; z-index:999;
