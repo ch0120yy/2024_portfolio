@@ -1,6 +1,6 @@
 // web swiper
 const webS = new Swiper('.web .swiper',{
-    // autoplay:{delay:3000},
+    autoplay:{delay:4000},
     loop:true,
     navigation:{
         nextEl:'.web .swiper-button-next',
@@ -30,7 +30,7 @@ const detailS = new Swiper('.detail .swiper',{
     slidesPerView:3, // 한 번에 보일 슬라이드 개수 (모바일)
     spaceBetween:20,
     // autoplay:{delay:2000},
-    loop:true,
+    // loop:true,
     // 반응형 슬라이드 수
     /* breakpoints:{
         800:{slidesPerView:3}, // 800 이상일 때 3개
