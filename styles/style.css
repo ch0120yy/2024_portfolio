@@ -144,7 +144,7 @@ nav a {
 .project .cardnews {}
 .project .cardnews .p {}
 .project .cardnews .card_g {display:flex; overflow: hidden; justify-content:space-between;}
-.project .cardnews .card_g a {width:100%; margin-right:10px; height:398px; position: relative;}
+.project .cardnews .card_g a {width:100%; margin-right:10px; height:500px; position: relative;}
 .project .cardnews .card_g a::after {
     content:''; display:block;
     height:100px; width:100%; background:linear-gradient(360deg, #7E67E7, transparent);
@@ -198,6 +198,8 @@ nav a {
 }
 .project .contact h1 {font-size:4.375rem; margin:0 50px 0 0;}
 .project p {display:flex; align-items: center;}
+.detail > p,
+.cardnews > p {margin-bottom:12px;}
 .project p img {width:45px;}
 .project p a {margin-left:5px; font-size:1.875rem; font-weight:500;}
 
