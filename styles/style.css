@@ -251,7 +251,7 @@ nav a {
     .intro .year {padding:30px 0 0 20px;}
     h1 {font-size:5rem;}
     .profile {flex-flow:column; padding:30px;}
-    .profile .photo {background-color:lime; margin:0 auto 20px;}
+    .profile .photo {margin:0 auto 20px;}
     .profile .txt {
         grid-template-areas:
         'a'
@@ -261,13 +261,12 @@ nav a {
     .txt .list p {font-size:.875rem;}
     .txt .list > h2 {
         font-size:1.25rem; margin-top:20px;
-        background-color:red;
     }
 }
 @media screen and (max-width:700px){
     .intro .year {padding:30px 0 0 16px;}
     .center h1 {width:100%;}
-    .center h1 img {width:100%; border:2px solid red;}
+    .center h1 img {width:100%;}
     h1 {font-size:3rem;}
     .profile {padding:30px;}
     .profile .photo {display:none;}
